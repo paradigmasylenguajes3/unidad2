@@ -1,6 +1,7 @@
 package objects;
 
-public class Cuenta {
+public class Cuenta implements ICalculosExtras{
+	
 	private String nombre;
 
 	public Cuenta(String nombre) {
@@ -24,6 +25,12 @@ public class Cuenta {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	@Override
+	public int calculoComision(int a) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	

@@ -31,7 +31,7 @@ public class EmpleadoTest {
 		empleado1.setAreaTrabajo(areaTrabajo);
 		
 		
-		System.out.println(empleado1);
+		System.out.println(empleado1.getDireccion());
 		
 		
 		

@@ -4,7 +4,7 @@ import objects.Cuenta;
 
 public class CuentaTest {
 
-	public static void main(String[] args) {
+	public static void main() {
 		//declaracion
 		Cuenta cuenta;
 		Cuenta cuenta2;

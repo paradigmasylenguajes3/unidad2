@@ -8,6 +8,7 @@ public class Empleado extends Persona {
 	
 	private AreaTrabajo areaTrabajo;
 
+	
 	public Integer getNumeroLegajo() {
 		return numeroLegajo;
 	}
@@ -49,8 +50,7 @@ public class Empleado extends Persona {
 
 	@Override
 	public String toString() {
-		return areaTrabajo + " " + getNombre() + " "
-				+ getApellido();
+		return  getNombre() + " "+ getApellido();
 	}
 	
 	

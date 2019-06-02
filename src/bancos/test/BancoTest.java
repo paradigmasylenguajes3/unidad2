@@ -12,7 +12,7 @@ public class BancoTest {
 		Banco banco1;
 		
 		banco1 = new BancoPatagonia();
-		System.out.println(BancoPatagonia.CODIGOBANCARIO);
+		System.out.println(BancoPatagonia.CODIGO_BANCARIO);
 	    System.out.println(banco1.tasaInteres());
 	    
 	    System.out.println(banco1.tasaInteresDolar());

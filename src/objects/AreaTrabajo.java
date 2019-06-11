@@ -21,7 +21,17 @@ public class AreaTrabajo {
 	
 	@Override
 	public String toString() {
-		return "AreaTrabajo [nombre=" + nombre + "]";
+		return  nombre;
+	}
+	
+	public AreaTrabajo(String nombre) {
+		
+		this.setNombre(nombre);
+		
+	}
+	
+	public AreaTrabajo() {
+		
 	}
 	
 

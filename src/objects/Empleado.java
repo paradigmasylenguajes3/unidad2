@@ -1,5 +1,7 @@
 package objects;
 
+import com.sun.xml.internal.bind.annotation.OverrideAnnotationOf;
+
 public class Empleado extends Persona {
 	
 	private Integer numeroLegajo;
@@ -7,8 +9,18 @@ public class Empleado extends Persona {
 	private Direccion direccion;
 	
 	private AreaTrabajo areaTrabajo;
+	
+	private TipoDocumento tipoDocumento;
 
 	
+	public TipoDocumento getTipoDocumento() {
+		return tipoDocumento;
+	}
+
+	public void setTipoDocumento(TipoDocumento tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
+	}
+
 	public Integer getNumeroLegajo() {
 		return numeroLegajo;
 	}
@@ -44,13 +56,21 @@ public class Empleado extends Persona {
 		this.areaTrabajo = areaTrabajo;
 	}
 
-	public Empleado() {
+	public Empleado(String nombre,String apellido, AreaTrabajo at,TipoDocumento td) {
 		
+		this.setNombre(nombre);
+		this.setApellido(apellido);
+		this.setAreaTrabajo(at);
+		this.setTipoDocumento(td);
+	}
+	
+	 public Empleado() {
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String toString() {
-		return  getNombre() + " "+ getApellido();
+		return  getNombre() + " "+ getApellido()+" - "+getTipoDocumento() ;
 	}
 	
 	

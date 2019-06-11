@@ -12,15 +12,15 @@ public class EmpleadoTest {
 		
 		Direccion direccion = new Direccion(); 
 		
-		AreaTrabajo areaTrabajo = new AreaTrabajo();
+		AreaTrabajo area = new AreaTrabajo();
 		
 		//seteo los atributos del objeto Direccion
 		direccion.setCalle("San Nicolas de Bari");
 		direccion.setBarrio("Centro");
 		direccion.setNumero(115);
 		
-		areaTrabajo.setNombre("Sistemas");
-		areaTrabajo.setDescripcion("lalalla");
+		area.setNombre("Sistemas");
+		area.setDescripcion("lalalla");
 		
 		
 		empleado1.setNombre("Juan");
@@ -28,7 +28,7 @@ public class EmpleadoTest {
 		empleado1.setDocumento(12345678);
 		empleado1.setNumeroLegajo(111);
 		empleado1.setDireccion(direccion);
-		empleado1.setAreaTrabajo(areaTrabajo);
+		empleado1.setAreaTrabajo(area);
 		
 		
 		System.out.println(empleado1.getDireccion());

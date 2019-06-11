@@ -21,6 +21,9 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AltaPersona extends JFrame {
 
@@ -122,6 +125,19 @@ empleados.add(new Empleado("Juan", "Perez", new AreaTrabajo("Liquidacion"), new 
 grillaEmpleado = new GrillaEmpleado(empleados);
 
 jtListadoPersona.setModel(grillaEmpleado);
+JButton btnGuardar = new JButton("Guardar");
+btnGuardar.addActionListener(new ActionListener() {
+	public void actionPerformed(ActionEvent arg0) {
+		Empleado e = new Empleado(jtfNombre.getText(), jtfApellido.getText(), new AreaTrabajo("Personal"),(TipoDocumento)jcbTipoDocumento.getSelectedItem());
+		empleados.add(e);
+		
+		GrillaEmpleado ge = new GrillaEmpleado(empleados);
+		
+		jtListadoPersona.setModel(ge);
+	}
+});
+btnGuardar.setBounds(147, 171, 89, 23);
+contentPane.add(btnGuardar);
 	
 	
 	}

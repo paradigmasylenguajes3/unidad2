@@ -22,7 +22,7 @@ import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 
-public class Alta extends JFrame {
+public class AltaPersona extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField jtfNombre;
@@ -43,7 +43,7 @@ public class Alta extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Alta frame = new Alta();
+					AltaPersona frame = new AltaPersona();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -55,7 +55,7 @@ public class Alta extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Alta() {
+	public AltaPersona() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 803, 397);
 		contentPane = new JPanel();
